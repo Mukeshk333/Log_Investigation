@@ -1,0 +1,19 @@
+2026-03-05 09:00:01 ARP INFO SRC=192.168.1.1 MAC=00:50:56:aa:bb:01 "Gateway ARP Announcement"
+2026-03-05 09:01:12 ARP INFO SRC=192.168.1.25 MAC=00:0c:29:ab:11:22 "Workstation ARP Broadcast"
+2026-03-05 09:02:10 ARP WARNING SRC=192.168.1.1 MAC=00:0c:29:ff:ee:99 "Duplicate IP detected for gateway"
+2026-03-05 09:02:12 ARP WARNING SRC=192.168.1.25 MAC=00:0c:29:ff:ee:99 "MAC address changed"
+2026-03-05 09:02:15 IDS ALERT SRC=192.168.1.60 DST=192.168.1.1 "Possible ARP Spoofing Attempt"
+2026-03-05 09:03:20 HTTP INFO SRC=192.168.1.25 DST=10.10.10.5 URL=/login METHOD=POST STATUS=200
+2026-03-05 09:03:20 HTTP DATA SRC=192.168.1.25 DST=10.10.10.5 username=john password=welcome123
+2026-03-05 09:03:21 HTTP INFO SRC=192.168.1.60 DST=10.10.10.5 URL=/login METHOD=POST STATUS=200
+2026-03-05 09:04:05 DNS INFO SRC=192.168.1.30 QUERY=google.com
+2026-03-05 09:05:14 ARP WARNING SRC=192.168.1.1 MAC=00:0c:29:ff:ee:99 "Gateway MAC conflict"
+2026-03-05 09:06:33 HTTP INFO SRC=192.168.1.25 DST=10.10.10.5 URL=/dashboard METHOD=GET STATUS=200
+2026-03-05 09:07:44 SYSLOG INFO Device=Switch1 "Port flapping detected on interface 3"
+2026-03-05 09:08:01 ARP ALERT SRC=192.168.1.60 "Frequent ARP replies detected"
+2026-03-05 09:09:12 HTTP INFO SRC=192.168.1.25 DST=10.10.10.5 URL=/logout METHOD=GET STATUS=200
+
+1. Which internal IP address shows unusual ARP activity within a short time window?
+2. Which device’s MAC address changed during the observed time period?
+3. What sensitive information was transmitted over HTTP during the suspicious activity?
+4. Based on the ARP behavior and intercepted web traffic, what is the likely network attack category?
